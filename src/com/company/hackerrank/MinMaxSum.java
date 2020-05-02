@@ -6,6 +6,7 @@ public class MinMaxSum {
 
     public static void main(String[] args) {
 
+        miniMaxSum(new int[]{1,2,3,4,5});
     }
 
     static void miniMaxSum(int[] arr) {
@@ -27,8 +28,9 @@ public class MinMaxSum {
             total += arr[i];
 
         }
-        System.out.println(total - max);
-        System.out.println(total - min);
+        long resultMax=total-max;
+        long resultMin=total-min;
+        System.out.println(resultMax+" "+resultMin);
 
     }
 }
